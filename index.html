@@ -2,17 +2,15 @@
 <html>
 <head>
     <script>
-      // 在页面加载完成后检查地址栏
-      window.onload = function() {
-        // 获取当前页面地址栏中的地址 
-        var url = window.location.href;
-        // 检查地址是否为 http://r6.hk/ 或 https://r6.hk/
-        if (url.indexOf("http://r6.hk/") == 0 || url.indexOf("https://r6.hk/") == 0) {
-          // 如果是,则跳转到 https://rennen.dev/
-          window.location.href = "https://rennen.dev/";
-        }
-      }
-  </script>
+    // 不需要等待页面加载
+    // 获取当前页面地址栏中的地址
+    var url = window.location.href;
+    // 检查地址是否匹配
+    if (url.indexOf("http://r6.hk/") == 0 || url.indexOf("https://r6.hk/") == 0) {
+      // 直接执行跳转 
+      window.location.href = "https://rennen.dev/";
+    }
+    </script>
   <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
